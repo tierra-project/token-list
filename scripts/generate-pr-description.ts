@@ -17,7 +17,7 @@ interface TokenSubmission {
 
 function generatePRDescription(token: TokenSubmission): string {
   const template = fs.readFileSync(
-    path.join(__dirname, '../.github/token-submission-template.md'),
+    path.join(__dirname, '../.github/pull_request_template.md'),
     'utf8'
   );
 
