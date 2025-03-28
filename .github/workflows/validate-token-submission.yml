@@ -79,9 +79,6 @@ jobs:
               // Generate PR description
               const description = execSync('pnpm run generate-pr-from-list tokens/80094.json tokens/80094.json.new', { encoding: 'utf8' });
               
-              // Add reviewers
-              const reviewers = ['0xarata'];
-
               // Only update if PR was just opened
               if (context.payload.action === 'opened') {
                 // Update PR description
@@ -93,14 +90,36 @@ jobs:
                 });
                 core.info('Updated PR description with generated template');
 
-                // Add reviewers
-                await github.rest.pulls.requestReviewers({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  pull_number: context.issue.number,
-                  reviewers: reviewers // Add the GitHub usernames of desired reviewers
-                });
-                core.info('Added reviewers to the PR');
+                // List of potential reviewers
+                const allReviewers = ['0xarata', 'CLAM101'];
+                // Remove PR author from potential reviewers
+                const availableReviewers = allReviewers.filter(
+                  reviewer => reviewer !== context.payload.pull_request.user.login
+                );
+
+                // Select 2 random reviewers if available
+                const numReviewers = Math.min(2, availableReviewers.length);
+                const selectedReviewers = [];
+                const reviewersCopy = [...availableReviewers];
+
+                for (let i = 0; i < numReviewers; i++) {
+                  const randomIndex = Math.floor(Math.random() * reviewersCopy.length);
+                  selectedReviewers.push(reviewersCopy[randomIndex]);
+                  reviewersCopy.splice(randomIndex, 1);
+                }
+
+                if (selectedReviewers.length > 0) {
+                  // Add reviewers
+                  await github.rest.pulls.requestReviewers({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    pull_number: context.issue.number,
+                    reviewers: selectedReviewers
+                  });
+                  core.info(`Added reviewers to the PR: ${selectedReviewers.join(', ')}`);
+                } else {
+                  core.warning('No eligible reviewers available');
+                }
               }
             } catch (error) {
               core.setFailed('Failed to generate PR description or assign reviewers');
