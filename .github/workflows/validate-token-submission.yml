@@ -6,6 +6,11 @@ on:
       - 'tokens/80094.json'
       - '.github/pull_request_template.md'
 
+# Add permissions block
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   validate:
     runs-on: ubuntu-latest
