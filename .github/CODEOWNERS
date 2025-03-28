@@ -1,0 +1,17 @@
+# Workflow files can only be changed by maintainers
+/.github/workflows/ @CLAM101 @0xarata
+
+# Scripts can only be changed by maintainers
+/scripts/ @CLAM101 @0xarata
+
+# Schema files can only be changed by maintainers
+/schemas/ @CLAM101 @0xarata
+
+# Configuration files can only be changed by maintainers
+*.json @CLAM101 @0xarata
+package.json @CLAM101 @0xarata
+pnpm-lock.yaml @CLAM101 @0xarata
+tsconfig.json @CLAM101 @0xarata
+
+# Token list can be modified by anyone (through PRs)
+/tokens/80094.json 
