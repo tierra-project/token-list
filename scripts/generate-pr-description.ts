@@ -23,30 +23,30 @@ function generatePRDescription(token: TokenSubmission): string {
 
   // Replace token information
   let description = template
-    .replace('`0x...` <!-- Required -->', `\`${token.address}\``)
-    .replace('**Token Name**: <!-- Required -->', `**Token Name**: ${token.name}`)
-    .replace('**Token Symbol**: <!-- Required -->', `**Token Symbol**: ${token.symbol}`)
-    .replace('**Decimals**: <!-- Required, must be between 0 and 18 -->', `**Decimals**: ${token.decimals}`);
+    .replace('`0x...`', `\`${token.address}\``)
+    .replace('**Token Name**:', `**Token Name**: ${token.name}`)
+    .replace('**Token Symbol**:', `**Token Symbol**: ${token.symbol}`)
+    .replace('**Decimals**:', `**Decimals**: ${token.decimals}`);
 
   // Add optional fields if they exist
   if (token.logoURI) {
-    description = description.replace('**Logo URI**: <!-- Optional, must be a valid HTTP(S) URL -->', `**Logo URI**: ${token.logoURI}`);
+    description = description.replace('**Logo URI**:', `**Logo URI**: ${token.logoURI}`);
   }
 
   if (token.tags && token.tags.length > 0) {
-    description = description.replace('**Tags**: <!-- Optional, comma-separated list of tags -->', `**Tags**: ${token.tags.join(', ')}`);
+    description = description.replace('**Tags**:', `**Tags**: ${token.tags.join(', ')}`);
   }
 
   if (token.extensions?.coingeckoId) {
     description = description.replace(
-      '**CoinGecko ID**: <!-- Optional -->',
+      '**CoinGecko ID**:',
       `**CoinGecko ID**: ${token.extensions.coingeckoId}`
     );
   }
 
   if (token.extensions?.pythPriceId) {
     description = description.replace(
-      '**Pyth Price Feed ID**: <!-- Optional -->',
+      '**Pyth Price Feed ID**:',
       `**Pyth Price Feed ID**: ${token.extensions.pythPriceId}`
     );
   }
