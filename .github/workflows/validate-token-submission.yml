@@ -79,14 +79,16 @@ jobs:
               // Generate PR description
               const description = execSync('pnpm run generate-pr-from-list tokens/80094.json tokens/80094.json.new', { encoding: 'utf8' });
               
-              // Always update the PR description with the generated template
-              await github.rest.pulls.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: context.issue.number,
-                body: description
-              });
-              core.info('Updated PR description with generated template');
+              // Only update if PR was just opened
+              if (context.payload.action === 'opened') {
+                await github.rest.pulls.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: context.issue.number,
+                  body: description
+                });
+                core.info('Updated PR description with generated template');
+              }
             } catch (error) {
               core.setFailed('Failed to generate PR description');
               console.error(error);
