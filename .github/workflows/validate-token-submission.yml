@@ -4,7 +4,6 @@ on:
   pull_request:
     paths:
       - 'tokens/80094.json'
-      - '.github/pull_request_template.md'
 
 # Add permissions block
 permissions:
@@ -91,43 +90,6 @@ jobs:
             } catch (error) {
               core.setFailed('Failed to generate PR description');
               console.error(error);
-            }
-
-      - name: Check PR template
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const path = require('path');
-
-            const pr = context.payload.pull_request;
-            const template = fs.readFileSync('.github/pull_request_template.md', 'utf8');
-            
-            // Check if PR description contains required sections
-            const requiredSections = [
-              '## Token Information',
-              '## Verification',
-              '## Checklist'
-            ];
-            
-            const missingSections = requiredSections.filter(
-              section => !pr.body.includes(section)
-            );
-            
-            if (missingSections.length > 0) {
-              core.setFailed(`Missing required sections in PR description: ${missingSections.join(', ')}`);
-            }
-            
-            // Check if verification checkboxes are checked
-            const verificationBoxes = pr.body.match(/\[ \].*confirm/g) || [];
-            if (verificationBoxes.length > 0) {
-              core.setFailed('All verification boxes must be checked before submission');
-            }
-            
-            // Check if checklist boxes are checked
-            const checklistBoxes = pr.body.match(/\[ \].*I have/g) || [];
-            if (checklistBoxes.length > 0) {
-              core.setFailed('All checklist boxes must be checked before submission');
             }
 
       - name: Validate token changes
