@@ -357,6 +357,18 @@
         "coingeckoId": "usda-2",
         "pythPriceId": "0x3a1050a3c03354c94ed44acf808327f05b7f9d610f38644684f5ce4796cce27b"
       }
+    },
+    {
+      "chainId": 80094,
+      "address": "0x0000000000000000000000000000000000000001",
+      "name": "Test Token",
+      "symbol": "TEST",
+      "decimals": 18,
+      "logoURI": "https://coin-images.coingecko.com/coins/images/51599/large/SUSDA.png?1731604761",
+      "extensions": {
+        "coingeckoId": "usda-2",
+        "pythPriceId": "0x3a1050a3c03354c94ed44acf808327f05b7f9d610f38644684f5ce4796cce27b"
+      }
     }
   ]
 }
