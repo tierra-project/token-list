@@ -9,7 +9,7 @@ function getNewTokens(originalList: TokenList, updatedList: TokenList): TokenLis
 
 function generatePRDescription(token: TokenList['tokens'][0]): string {
   const template = fs.readFileSync(
-    path.join(__dirname, '../.github/token-submission-template.md'),
+    path.join(__dirname, '../.github/pull_request_template.md'),
     'utf8'
   );
 
@@ -22,11 +22,17 @@ function generatePRDescription(token: TokenList['tokens'][0]): string {
 
   // Add optional fields if they exist
   if (token.logoURI) {
-    description = description.replace('**Logo URI**: <!-- Optional, must be a valid HTTP(S) URL -->', `**Logo URI**: ${token.logoURI}`);
+    description = description.replace(
+      '**Logo URI**: <!-- Optional, must be a valid HTTP(S) URL -->',
+      `**Logo URI**: ${token.logoURI}`
+    );
   }
 
   if (token.tags && token.tags.length > 0) {
-    description = description.replace('**Tags**: <!-- Optional, comma-separated list of tags -->', `**Tags**: ${token.tags.join(', ')}`);
+    description = description.replace(
+      '**Tags**: <!-- Optional, comma-separated list of tags -->',
+      `**Tags**: ${token.tags.join(', ')}`
+    );
   }
 
   if (token.extensions?.coingeckoId) {

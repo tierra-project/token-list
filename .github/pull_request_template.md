@@ -1,3 +1,9 @@
+<!-- 
+NOTE: This template will be automatically filled with your token information when you submit the PR.
+You can modify the description afterward if needed, but please ensure all required information is present.
+The checkboxes below must be manually checked by you.
+-->
+
 # Token Submission
 
 ## Token Information

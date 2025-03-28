@@ -4,7 +4,7 @@ on:
   pull_request:
     paths:
       - 'tokens/80094.json'
-      - '.github/token-submission-template.md'
+      - '.github/pull_request_template.md'
 
 jobs:
   validate:
@@ -79,7 +79,7 @@ jobs:
         with:
           script: |
             const pr = context.payload.pull_request;
-            const template = fs.readFileSync('.github/token-submission-template.md', 'utf8');
+            const template = fs.readFileSync('.github/pull_request_template.md', 'utf8');
             
             // Check if PR description contains required sections
             const requiredSections = [
