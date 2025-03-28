@@ -33,7 +33,7 @@ jobs:
       - name: Validate token list format
         run: pnpm run validate
 
-      - name: Generate PR description and assign reviewers
+      - name: Generate PR description
         uses: actions/github-script@v7
         with:
           script: |
@@ -81,7 +81,6 @@ jobs:
               
               // Only update if PR was just opened
               if (context.payload.action === 'opened') {
-                // Update PR description
                 await github.rest.pulls.update({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
@@ -89,40 +88,9 @@ jobs:
                   body: description
                 });
                 core.info('Updated PR description with generated template');
-
-                // List of potential reviewers
-                const allReviewers = ['0xarata', 'CLAM101'];
-                // Remove PR author from potential reviewers
-                const availableReviewers = allReviewers.filter(
-                  reviewer => reviewer !== context.payload.pull_request.user.login
-                );
-
-                // Select 2 random reviewers if available
-                const numReviewers = Math.min(2, availableReviewers.length);
-                const selectedReviewers = [];
-                const reviewersCopy = [...availableReviewers];
-
-                for (let i = 0; i < numReviewers; i++) {
-                  const randomIndex = Math.floor(Math.random() * reviewersCopy.length);
-                  selectedReviewers.push(reviewersCopy[randomIndex]);
-                  reviewersCopy.splice(randomIndex, 1);
-                }
-
-                if (selectedReviewers.length > 0) {
-                  // Add reviewers
-                  await github.rest.pulls.requestReviewers({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    pull_number: context.issue.number,
-                    reviewers: selectedReviewers
-                  });
-                  core.info(`Added reviewers to the PR: ${selectedReviewers.join(', ')}`);
-                } else {
-                  core.warning('No eligible reviewers available');
-                }
               }
             } catch (error) {
-              core.setFailed('Failed to generate PR description or assign reviewers');
+              core.setFailed('Failed to generate PR description');
               console.error(error);
             }
 
