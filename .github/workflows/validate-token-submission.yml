@@ -33,7 +33,7 @@ jobs:
       - name: Validate token list format
         run: pnpm run validate
 
-      - name: Generate PR description
+      - name: Generate PR description and assign reviewers
         uses: actions/github-script@v7
         with:
           script: |
@@ -79,8 +79,12 @@ jobs:
               // Generate PR description
               const description = execSync('pnpm run generate-pr-from-list tokens/80094.json tokens/80094.json.new', { encoding: 'utf8' });
               
+              // Add reviewers
+              const reviewers = ['0xarata'];
+
               // Only update if PR was just opened
               if (context.payload.action === 'opened') {
+                // Update PR description
                 await github.rest.pulls.update({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
@@ -88,9 +92,18 @@ jobs:
                   body: description
                 });
                 core.info('Updated PR description with generated template');
+
+                // Add reviewers
+                await github.rest.pulls.requestReviewers({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: context.issue.number,
+                  reviewers: reviewers // Add the GitHub usernames of desired reviewers
+                });
+                core.info('Added reviewers to the PR');
               }
             } catch (error) {
-              core.setFailed('Failed to generate PR description');
+              core.setFailed('Failed to generate PR description or assign reviewers');
               console.error(error);
             }
 
