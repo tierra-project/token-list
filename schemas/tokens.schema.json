@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Token List Schema",
+  "description": "Schema for Berachain token list following Uniswap token list standard",
+  "type": "object",
+  "required": ["name", "tokens"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Schema reference"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the token list"
+    },
+    "logoURI": {
+      "type": "string",
+      "description": "URI of the token list logo",
+      "format": "uri"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Keywords associated with the token list"
+    },
+    "tags": {
+      "type": "object",
+      "description": "Tag definitions for tokens",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "description"],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "version": {
+      "type": "object",
+      "required": ["major", "minor", "patch"],
+      "properties": {
+        "major": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "minor": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "patch": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "tokens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["chainId", "address", "name", "symbol", "decimals"],
+        "properties": {
+          "chainId": {
+            "type": "integer",
+            "description": "Chain ID of the network"
+          },
+          "address": {
+            "type": "string",
+            "pattern": "^0x[a-fA-F0-9]{40}$",
+            "description": "Token contract address"
+          },
+          "name": {
+            "type": "string",
+            "description": "Token name"
+          },
+          "symbol": {
+            "type": "string",
+            "description": "Token symbol"
+          },
+          "decimals": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 18,
+            "description": "Number of token decimals"
+          },
+          "logoURI": {
+            "type": "string",
+            "format": "uri",
+            "description": "URI of the token logo"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Tags associated with the token"
+          },
+          "extensions": {
+            "type": "object",
+            "description": "Additional token information",
+            "properties": {
+              "coingeckoId": {
+                "type": "string",
+                "description": "CoinGecko ID for the token"
+              },
+              "pythPriceId": {
+                "type": "string",
+                "description": "Pyth Network price feed ID"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 
