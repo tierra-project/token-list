@@ -30,6 +30,21 @@
     },
     {
       "chainId": 80094,
+      "address": "0xd5cd1735e19f35c4bf14603f5c0b00d64dfe88e1",
+      "symbol": "BFT",
+      "name": "Bepolia Trading Test",
+      "decimals": 18,
+      "logoURI": "https://ivory-fierce-cat-639.mypinata.cloud/ipfs/bafybeibsixuvozrckau5mgk5wgxkc3krb2mx2xrsc43llonhu56wl27nbm",
+      "tags": [
+        "featured"
+      ],
+      "extensions": {
+        "coingeckoId": "",
+        "pythPriceId": ""
+      }
+    },
+    {
+      "chainId": 80094,
       "address": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
       "symbol": "WBTC",
       "name": "WBTC",
