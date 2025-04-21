@@ -382,6 +382,21 @@
         "coingeckoId": "",
         "pythPriceId": ""
       }
+    },
+    {
+      "chainId": 80094,
+      "address": "0x576dd82f19d88220ad3b9b4d7dac2613dd15d0a1",
+      "symbol": "GDAOB",
+      "name": "Genesis DAO Bepolia",
+      "decimals": 18,
+      "logoURI": "https://ivory-fierce-cat-639.mypinata.cloud/ipfs/bafybeibsixuvozrckau5mgk5wgxkc3krb2mx2xrsc43llonhu56wl27nbm",
+      "tags": [
+        "featured"
+      ],
+      "extensions": {
+        "coingeckoId": "",
+        "pythPriceId": ""
+      }
     }
   ]
 }
