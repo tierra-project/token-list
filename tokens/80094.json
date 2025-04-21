@@ -28,21 +28,7 @@
         "pythPriceId": "0x962088abcfdbdb6e30db2e340c8cf887d9efb311b1f2f17b155a63dbb6d40265"
       }
     },
-    {
-      "chainId": 80094,
-      "address": "0x3d34a7c7acf4c356e76bd3a25e4d9abec46d3d6c",
-      "symbol": "BFT",
-      "name": "Bepolia Trading Test",
-      "decimals": 18,
-      "logoURI": "https://ivory-fierce-cat-639.mypinata.cloud/ipfs/bafybeibsixuvozrckau5mgk5wgxkc3krb2mx2xrsc43llonhu56wl27nbm",
-      "tags": [
-        "featured"
-      ],
-      "extensions": {
-        "coingeckoId": "",
-        "pythPriceId": ""
-      }
-    },
+
     {
       "chainId": 80094,
       "address": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
@@ -371,6 +357,30 @@
       "extensions": {
         "coingeckoId": "usda-2",
         "pythPriceId": "0x3a1050a3c03354c94ed44acf808327f05b7f9d610f38644684f5ce4796cce27b"
+      }
+    },
+   
+    {
+      "chainId": 80094,
+      "address": "0x38f3cf31f81c8e8437fa43d0b1d6db81c4e977b1",
+      "symbol": "MockToken",
+      "name": "MockToken",
+      "decimals": 18,
+      "logoURI": "https://res.cloudinary.com/duv0g402y/image/upload/v1739450224/foundation/oe6damqveywiebwxeelf.png"
+    },
+    {
+      "chainId": 80094,
+      "address": "0x3d34a7c7acf4c356e76bd3a25e4d9abec46d3d6c",
+      "symbol": "BFT",
+      "name": "Bepolia Trading Test",
+      "decimals": 18,
+      "logoURI": "https://ivory-fierce-cat-639.mypinata.cloud/ipfs/bafybeibsixuvozrckau5mgk5wgxkc3krb2mx2xrsc43llonhu56wl27nbm",
+      "tags": [
+        "featured"
+      ],
+      "extensions": {
+        "coingeckoId": "",
+        "pythPriceId": ""
       }
     }
   ]
