@@ -366,7 +366,14 @@
       "symbol": "MockToken",
       "name": "MockToken",
       "decimals": 18,
-      "logoURI": "https://res.cloudinary.com/duv0g402y/image/upload/v1739450224/foundation/oe6damqveywiebwxeelf.png"
+      "logoURI": "https://res.cloudinary.com/duv0g402y/image/upload/v1739450224/foundation/oe6damqveywiebwxeelf.png",
+      "tags": [
+        "featured"
+      ],
+      "extensions": {
+        "coingeckoId": "",
+        "pythPriceId": ""
+      }
     },
     {
       "chainId": 80094,
