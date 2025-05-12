@@ -1,0 +1,457 @@
+{
+  "$schema": "../schemas/tokens.schema.json",
+  "name": "Sonic Mainnet Default Token List",
+  "logoURI": "https://res.cloudinary.com/duv0g402y/image/upload/v1739450224/foundation/oe6damqveywiebwxeelf.png",
+  "tags": {
+    "stablecoin": {
+      "name": "Stablecoin",
+      "description": "Tokens that are fixed to an external asset, e.g. the US dollar"
+    },
+    "featured": {
+      "name": "Featured",
+      "description": "Tokens that are featured"
+    }
+  },
+  "tokens": [
+    {
+      "chainId": 146,
+      "address": "0x0000000000000000000000000000000000000000",
+      "name": "Sonic Token",
+      "symbol": "SONIC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/SONIC.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "b2748e718cf3a75b0ca099cb467aea6aa8f7d960b381b3970769b5a2d6be26dc"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "name": "Wrapped Sonic",
+      "symbol": "wS",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/wS.png",
+      "tags": [
+        "featured"
+      ],
+      "extensions": {
+        "pythPriceId": "b2748e718cf3a75b0ca099cb467aea6aa8f7d960b381b3970769b5a2d6be26dc"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "Bridged USDC",
+      "symbol": "USDC.e",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/USDC.e.png",
+      "tags": [
+        "stablecoin",
+        "featured"
+      ],
+      "extensions": {
+        "pythPriceId": "eaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0xe715cbA7B5cCb33790ceBFF1436809d36cb17E57",
+      "name": "Bridged EURC",
+      "symbol": "EURC.e",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/EURC.e.png",
+      "tags": [
+        "stablecoin"
+      ],
+      "extensions": {
+        "pythPriceId": "76fa85158bf14ede77087fe3ae472f66213f6ea2f5b411cb2de472794990fa5c"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "name": "Wrapped Ether on Sonic",
+      "symbol": "WETH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/WETH.png",
+      "tags": [
+        "featured"
+      ],
+      "extensions": {
+        "pythPriceId": "9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE",
+      "name": "Sonic USD",
+      "symbol": "scUSD",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/scUSD.png",
+      "tags": [
+        "stablecoin"
+      ],
+      "extensions": {
+        "pythPriceId": "316b1536978bee10c47b3c74c0b3995aabae973a3351621680a2aa383aca77b8"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x0e0Ce4D450c705F8a0B6Dd9d5123e3df2787D16B",
+      "name": "Wagmi",
+      "symbol": "WAGMI",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/WAGMI.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "7cce6e66952b0cf3d6f35d3a59e6decbe53850e67c880eee9ae876543eb5d6bd"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0xe920d1DA9A4D59126dC35996Ea242d60EFca1304",
+      "name": "Derp Token",
+      "symbol": "DERP",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/DERP.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x3bcE5CB273F0F148010BbEa2470e7b5df84C7812",
+      "name": "Sonic ETH",
+      "symbol": "scETH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/scETH.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "8bb5e69ed1ab19642a0e7e851b1ed7b3579d0548bc8ddd1077b0d9476bb1dabc"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0xE51EE9868C1f0d6cd968A8B8C8376Dc2991BFE44",
+      "name": "PaintSwap",
+      "symbol": "BRUSH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/BRUSH.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x486B6Fa0419b33a0c7A6e4698c231D7E2f2D5299",
+      "name": "Moon Bay",
+      "symbol": "MOON",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/MOON.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x50Bc6e1DfF8039A4b967c1BF507ba5eA13fa18B6",
+      "name": "sDOG",
+      "symbol": "sDOG",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/sDOG.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x2fb960611bdC322A9a4A994252658Cae9fe2eeA1",
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/UNI.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "78d185a741d07edb3412b09008b7c5cfb9bbbd7d568bf00ba737b456ba171501"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x3333111A391cC08fa51353E9195526A70b333333",
+      "name": "Shadow Liquid Staking Token",
+      "symbol": "x33",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/x33.png",
+      "tags": [],
+      "extensions": {}
+    },
+    
+    {
+      "chainId": 146,
+      "address": "0x43eDD7f3831b08FE70B7555ddD373C8bF65a9050",
+      "name": "Frax Ether",
+      "symbol": "frxETH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/frxETH.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "29240ee3a9024d107888eb1d4c527216f06bd64cee030c6b5575b1a8d77cb659"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x44E23B1F3f4511b3a7e81077Fd9F2858dF1B7579",
+      "name": "Millennium Club",
+      "symbol": "MCLB",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/MCLB.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x455d5f11Fea33A8fa9D3e285930b478B6bF85265",
+      "name": "Staked Sonic ETH",
+      "symbol": "stkscETH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/stkscETH.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x4D85bA8c3918359c78Ed09581E5bc7578ba932ba",
+      "name": "Staked Sonic USD",
+      "symbol": "stkscUSD",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/stkscUSD.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "b680422b70915df562e4802bd8679112ff0f6b0a29ec2c3762ae2720eda01e58"
+      }
+    },
+    
+    {
+      "chainId": 146,
+      "address": "0x5050bc082FF4A74Fb6B0B04385dEfdDB114b2424",
+      "name": "xShadow",
+      "symbol": "xSHADOW",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/xSHADOW.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x5555b2733602DEd58D47b8D3D989E631CBee5555",
+      "name": "Shadow Wrapped Gems",
+      "symbol": "GEMS",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/GEMS.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x578Ee1ca3a8E1b54554Da1Bf7C583506C4CD11c6",
+      "name": "Aave Sonic USDC",
+      "symbol": "aSonUSDC",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/aSonUSDC.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x602BaeaB9B0DE4a99C457cf1249088932AA04FaC",
+      "name": "Brunch USD",
+      "symbol": "bUSD",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/bUSD.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x6047828dc181963ba44974801FF68e538dA5eaF9",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/USDT.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x6202B9f02E30E5e1c62Cc01E4305450E5d83b926",
+      "name": "Staked Stream USD",
+      "symbol": "xUSD",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/xUSD.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "af2a90410d6fdcaad452c6081fb7ec26cd6bffbe18b6dbc894f310e6e49585ee"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x64445f0aecC51E94aD52d8AC56b7190e764E561a",
+      "name": "Frax Share",
+      "symbol": "FXS",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/FXS.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "735f591e4fed988cd38df74d8fcedecf2fe8d9111664e0fd500db9aa78b316b1"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x66E535e8D2ebf13F49F3D49e5c50395a97C137b1",
+      "name": "Molten",
+      "symbol": "MOLTEN",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/MOLTEN.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x674a430f531847a6f8976A900f8ace765f896a1b",
+      "name": "GSNAKE",
+      "symbol": "GSNAKE",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/GSNAKE.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x6881B80ea7C858E4aEEf63893e18a8A36f3682f3",
+      "name": "NAVI",
+      "symbol": "NAVI",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/NAVI.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+      "name": "Frax USD",
+      "symbol": "frxUSD",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/frxUSD.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "7c53208632935ba5122c3cf65a0f4b3e72ba4955b49ad6ba0acf3d9ba405aef3"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x888852d1c63c7b333efEb1c4C5C79E36ce918888",
+      "name": "Infinity",
+      "symbol": "8",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/8.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x981Bd9F77c8AAFC14EBC86769503f86A3CC29aF5",
+      "name": "Tarot",
+      "symbol": "TAROT",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/TAROT.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x9F0dF7799f6FDAd409300080cfF680f5A23df4b1",
+      "name": "Wrapped OS",
+      "symbol": "wOS",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/wOS.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x9d549C39E5E1A0e7eF41D4b7d74c49f976102E36",
+      "name": "Stable Jack",
+      "symbol": "JACK",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/JACK.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0xA052cC4dD2138504Dd89E723D72636D491b4cEd9",
+      "name": "Milk",
+      "symbol": "MILK",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/MILK.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0xBb30e76d9Bb2CC9631F7fC5Eb8e87B5Aff32bFbd",
+      "name": "Sonic BTC",
+      "symbol": "scBTC",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/scBTC.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0xC3827A4BC8224ee2D116637023b124CED6db6e90",
+      "name": "uniBTC",
+      "symbol": "uniBTC",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/uniBTC.png",
+      "tags": [],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0xb1e25689D55734FD3ffFc939c4C3Eb52DFf8A794",
+      "name": "Origin Sonic",
+      "symbol": "OS",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/OS.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "2bcd65e3c1b4580a5f59755ef30e11077238217dd418d301dd7ee4d252987675"
+      }
+    },
+
+    {
+      "chainId": 146,
+      "address": "0xf1eF7d2D4C0c881cd634481e0586ed5d2871A74B",
+      "name": "Pendle",
+      "symbol": "PENDLE",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/PENDLE.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "9a4df90b25497f66b1afb012467e316e801ca3d839456db028892fe8c70c8016"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/WBTC.png",
+      "tags": [],
+      "extensions": {
+        "pythPriceId": "c9d8b075a5c69303365ae23633d4e085199bf5c520a3b90fed1322a0342ffc33"
+      }
+    }
+  ]
+}
