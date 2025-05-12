@@ -7,12 +7,6 @@ const { Worker, isMainThread, parentPort, workerData } = require('worker_threads
 const tokenListPath = path.join(__dirname, '../../tokens/146.json');
 const tokenList = JSON.parse(fs.readFileSync(tokenListPath, 'utf8'));
 
-// Create backup with timestamp
-const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-const backupPath = path.join(__dirname, '../../tokens/146.backup.' + timestamp + '.json');
-fs.writeFileSync(backupPath, JSON.stringify(tokenList, null, 2));
-console.log(`Created backup at: ${backupPath}`);
-
 // API endpoints
 const COINGECKO_API = 'api.coingecko.com';
 const PYTH_API = 'hermes.pyth.network';
@@ -81,7 +75,7 @@ async function fetchFromAPIWithRetry(hostname, path, maxRetries = 3, retryDelay 
 async function fetchCoinGeckoIdByAddress(address) {
     try {
         // Try to get by contract address first
-        const data = await fetchFromAPIWithRetry(COINGECKO_API, `/api/v3/coins/ethereum/contract/${address}`);
+        const data = await fetchFromAPIWithRetry(COINGECKO_API, `/api/v3/coins/sonic/contract/${address}`);
         if (data && data.id) {
             return data.id;
         }
@@ -161,6 +155,12 @@ if (!isMainThread) {
 if (isMainThread) {
     async function updatePriceIds() {
         console.log('Starting price ID update process...\n');
+        
+        // Create backup with timestamp
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+        const backupPath = path.join(__dirname, '../../tokens/146.backup.' + timestamp + '.json');
+        fs.writeFileSync(backupPath, JSON.stringify(tokenList, null, 2));
+        console.log(`Created backup at: ${backupPath}`);
         
         let updatedCount = 0;
         let coingeckoAdded = 0;

@@ -22,7 +22,7 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/SONIC.png",
       "tags": [],
       "extensions": {
-        "pythPriceId": "b2748e718cf3a75b0ca099cb467aea6aa8f7d960b381b3970769b5a2d6be26dc"
+        "coingeckoId": "sonic-3"
       }
     },
     {
@@ -36,7 +36,7 @@
         "featured"
       ],
       "extensions": {
-        "pythPriceId": "b2748e718cf3a75b0ca099cb467aea6aa8f7d960b381b3970769b5a2d6be26dc"
+        "coingeckoId": "wrapped-sonic"
       }
     },
     {
@@ -51,6 +51,7 @@
         "featured"
       ],
       "extensions": {
+        "coingeckoId": "sonic-bridged-usdc-e-sonic",
         "pythPriceId": "eaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a"
       }
     },
@@ -65,6 +66,7 @@
         "stablecoin"
       ],
       "extensions": {
+        "coingeckoId": "euro-coin",
         "pythPriceId": "76fa85158bf14ede77087fe3ae472f66213f6ea2f5b411cb2de472794990fa5c"
       }
     },
@@ -79,6 +81,7 @@
         "featured"
       ],
       "extensions": {
+        "coingeckoId": "weth",
         "pythPriceId": "9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6"
       }
     },
@@ -93,6 +96,7 @@
         "stablecoin"
       ],
       "extensions": {
+        "coingeckoId": "rings-scusd",
         "pythPriceId": "316b1536978bee10c47b3c74c0b3995aabae973a3351621680a2aa383aca77b8"
       }
     },
@@ -105,6 +109,7 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/WAGMI.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "wagmi-2",
         "pythPriceId": "7cce6e66952b0cf3d6f35d3a59e6decbe53850e67c880eee9ae876543eb5d6bd"
       }
     },
@@ -116,7 +121,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/DERP.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "derp-2"
+      }
     },
     {
       "chainId": 146,
@@ -127,6 +134,7 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/scETH.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "rings-sc-eth",
         "pythPriceId": "8bb5e69ed1ab19642a0e7e851b1ed7b3579d0548bc8ddd1077b0d9476bb1dabc"
       }
     },
@@ -138,7 +146,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/BRUSH.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "paint-swap"
+      }
     },
     {
       "chainId": 146,
@@ -169,6 +179,7 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/UNI.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "uniswap",
         "pythPriceId": "78d185a741d07edb3412b09008b7c5cfb9bbbd7d568bf00ba737b456ba171501"
       }
     },
@@ -180,9 +191,10 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/x33.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "shadow-liquid-staking-token"
+      }
     },
-    
     {
       "chainId": 146,
       "address": "0x43eDD7f3831b08FE70B7555ddD373C8bF65a9050",
@@ -192,6 +204,7 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/frxETH.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "frax-ether",
         "pythPriceId": "29240ee3a9024d107888eb1d4c527216f06bd64cee030c6b5575b1a8d77cb659"
       }
     },
@@ -203,7 +216,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/MCLB.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "millennium-club"
+      }
     },
     {
       "chainId": 146,
@@ -227,7 +242,6 @@
         "pythPriceId": "b680422b70915df562e4802bd8679112ff0f6b0a29ec2c3762ae2720eda01e58"
       }
     },
-    
     {
       "chainId": 146,
       "address": "0x5050bc082FF4A74Fb6B0B04385dEfdDB114b2424",
@@ -256,7 +270,9 @@
       "decimals": 6,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/aSonUSDC.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "aave-usdc-sonic"
+      }
     },
     {
       "chainId": 146,
@@ -277,7 +293,8 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/USDT.png",
       "tags": [],
       "extensions": {
-        "pythPriceId": "2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b"
+        "pythPriceId": "2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+        "coingeckoId": "tether"
       }
     },
     {
@@ -301,7 +318,8 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/FXS.png",
       "tags": [],
       "extensions": {
-        "pythPriceId": "735f591e4fed988cd38df74d8fcedecf2fe8d9111664e0fd500db9aa78b316b1"
+        "pythPriceId": "735f591e4fed988cd38df74d8fcedecf2fe8d9111664e0fd500db9aa78b316b1",
+        "coingeckoId": "frax-share"
       }
     },
     {
@@ -312,7 +330,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/MOLTEN.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "molten-2"
+      }
     },
     {
       "chainId": 146,
@@ -322,7 +342,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/GSNAKE.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "gsnake"
+      }
     },
     {
       "chainId": 146,
@@ -332,7 +354,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/NAVI.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "atlas-navi"
+      }
     },
     {
       "chainId": 146,
@@ -343,6 +367,7 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/frxUSD.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "l2-standard-bridged-frxusd",
         "pythPriceId": "7c53208632935ba5122c3cf65a0f4b3e72ba4955b49ad6ba0acf3d9ba405aef3"
       }
     },
@@ -354,7 +379,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/8.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "infinity-2"
+      }
     },
     {
       "chainId": 146,
@@ -364,7 +391,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/TAROT.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "tarot-2"
+      }
     },
     {
       "chainId": 146,
@@ -374,7 +403,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/wOS.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "wrapped-sonic-origin"
+      }
     },
     {
       "chainId": 146,
@@ -384,7 +415,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/JACK.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "jack-2"
+      }
     },
     {
       "chainId": 146,
@@ -404,7 +437,9 @@
       "decimals": 8,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/scBTC.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "rings-scbtc"
+      }
     },
     {
       "chainId": 146,
@@ -414,7 +449,9 @@
       "decimals": 8,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/uniBTC.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "universal-btc"
+      }
     },
     {
       "chainId": 146,
@@ -425,10 +462,10 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/OS.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "origin-staked-s",
         "pythPriceId": "2bcd65e3c1b4580a5f59755ef30e11077238217dd418d301dd7ee4d252987675"
       }
     },
-
     {
       "chainId": 146,
       "address": "0xf1eF7d2D4C0c881cd634481e0586ed5d2871A74B",
@@ -438,6 +475,7 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/PENDLE.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "pendle",
         "pythPriceId": "9a4df90b25497f66b1afb012467e316e801ca3d839456db028892fe8c70c8016"
       }
     },
@@ -450,6 +488,7 @@
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/WBTC.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "wrapped-bitcoin",
         "pythPriceId": "c9d8b075a5c69303365ae23633d4e085199bf5c520a3b90fed1322a0342ffc33"
       }
     }
