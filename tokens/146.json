@@ -17,7 +17,7 @@
       "chainId": 146,
       "address": "0x0000000000000000000000000000000000000000",
       "name": "Sonic Token",
-      "symbol": "SONIC",
+      "symbol": "S",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/SONIC.png",
       "tags": [],
