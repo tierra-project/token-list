@@ -158,7 +158,9 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/MOON.png",
       "tags": [],
-      "extensions": {}
+      "extensions": {
+        "coingeckoId": "moon-bay-2"
+      }
     },
     {
       "chainId": 146,
