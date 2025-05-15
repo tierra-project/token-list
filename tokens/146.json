@@ -25,6 +25,28 @@
         "coingeckoId": "sonic-3"
       }
     },
+
+    {
+      "chainId": 146,
+      "address": "0x00d8ca9973fd7390e2a31da5d83d896bdd4b0396",
+      "name": "Tierra Sonic Trading Test",
+      "symbol": "TST",
+      "decimals": 18,
+      "logoURI": "https://ivory-fierce-cat-639.mypinata.cloud/ipfs/bafkreifdfgi3p4clo7ekhjxdninlhsopelge7lc74bdmm73qvk4jq3hxce",
+      "tags": ["featured"],
+      "extensions": {}
+    },
+    {
+      "chainId": 146,
+      "address": "0x30fa80fb0d4d0c411f35961079c1fc58b3af4f9a",
+      "name": "FARMREWARDTOKEN",
+      "symbol": "FRT",
+      "decimals": 18,
+      "logoURI": "https://ivory-fierce-cat-639.mypinata.cloud/ipfs/bafybeig7ahtcymffdwlz57m2pigg7d3aawexp3xc6hcude5vw4ssdnip6e",
+      "tags": ["featured"],
+      "extensions": {}
+    },
+
     {
       "chainId": 146,
       "address": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
@@ -32,9 +54,7 @@
       "symbol": "wS",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/wS.png",
-      "tags": [
-        "featured"
-      ],
+      "tags": ["featured"],
       "extensions": {
         "coingeckoId": "wrapped-sonic"
       }
@@ -46,10 +66,7 @@
       "symbol": "USDC.e",
       "decimals": 6,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/USDC.e.png",
-      "tags": [
-        "stablecoin",
-        "featured"
-      ],
+      "tags": ["stablecoin", "featured"],
       "extensions": {
         "coingeckoId": "sonic-bridged-usdc-e-sonic",
         "pythPriceId": "eaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a"
@@ -62,9 +79,7 @@
       "symbol": "EURC.e",
       "decimals": 6,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/EURC.e.png",
-      "tags": [
-        "stablecoin"
-      ],
+      "tags": ["stablecoin"],
       "extensions": {
         "coingeckoId": "euro-coin",
         "pythPriceId": "76fa85158bf14ede77087fe3ae472f66213f6ea2f5b411cb2de472794990fa5c"
@@ -77,9 +92,7 @@
       "symbol": "WETH",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/WETH.png",
-      "tags": [
-        "featured"
-      ],
+      "tags": ["featured"],
       "extensions": {
         "coingeckoId": "weth",
         "pythPriceId": "9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6"
@@ -92,9 +105,7 @@
       "symbol": "scUSD",
       "decimals": 6,
       "logoURI": "https://raw.githubusercontent.com/tierra-project/token-list/main/logos/146/scUSD.png",
-      "tags": [
-        "stablecoin"
-      ],
+      "tags": ["stablecoin"],
       "extensions": {
         "coingeckoId": "rings-scusd",
         "pythPriceId": "316b1536978bee10c47b3c74c0b3995aabae973a3351621680a2aa383aca77b8"
